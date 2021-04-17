@@ -8,19 +8,20 @@ h1 {
   margin-left: 30px;
   padding-top: 0px;
 }
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
   color: rgb(255, 255, 255);
   border-radius: 0;
-  border-bottom: 10px solid rgb(255, 255, 255);
+  border-bottom: 10px solid black;
 }
 
 #moment-time {
   background-color: var(--moment-time);
   border-radius: 5px;
   padding: 5px;
-  
+  font-size: 30px;
 }
 
 body {
