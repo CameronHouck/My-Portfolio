@@ -9,23 +9,8 @@ h1 {
   padding-top: 0px;
 }
 
-.jumbotron {
-  text-align: center;
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-  border-radius: 0;
-  border-bottom: 10px solid black;
-}
-
-#moment-time {
-  background-color: var(--moment-time);
-  border-radius: 5px;
-  padding: 5px;
-  font-size: 30px;
-}
-
 body {
-  background-color: #051a20;
+  background-color: #C3F7AB;
   font-family: Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
 }
@@ -33,7 +18,7 @@ body {
 .header {
   justify-content: space-between;
   display: flex;
-  background-color: #f6254d;
+  background-color: #627237;
   border-radius: 30px;
   margin-top: 1px;
   margin-bottom: 10px;
@@ -62,31 +47,18 @@ a:active {
 .box {
   display: flex;
   color: rgb(0, 0, 0);
-  background-color: #f6254d;
-  margin-bottom: 10px;
+  background-color: #627237;
+  margin-bottom: 40px;
   border-radius: 30px;
   height: 400px;
   font-size: 30px;
+
 }
 
 .box img {
   height: 400px;
   width: 400px;
-}
-
-footer {
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-}
-
-.footer {
-  height: 100px;
-  margin: auto;
-  width: 400px;
-  text-align: center;
-  color: #f6254d;
-  font-size: 30px;
+  border-radius: 30px;
 }
 
 body {
@@ -95,13 +67,17 @@ body {
 
 @media only screen and (max-width: 1033px) {
   body {
-    background-color: rgb(122, 18, 18);
+    background-color: #C3F7AB;
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 20px;
   }
 }
 
-@media screen and (min-width: 1033px) {
-  div.box {
-    font-size: 30px;
+@media only screen and (max-width: 1033px) {
+  .gmail {
+    height: 200px;
   }
 }
 
