@@ -185,7 +185,7 @@ header {
 }
 
 .nav-open .nav {
-  transform: translateX(0)
+  transform: translateX(0);
 }
 
 .nav-open .nav-toggle {
@@ -193,7 +193,7 @@ header {
 }
 
 .nav-open .hamburger {
-  transform: rotate(.625turn);
+  transform: rotate(0.625turn);
 }
 
 .nav-open .hamburger::before {
