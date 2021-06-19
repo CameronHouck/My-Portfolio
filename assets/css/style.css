@@ -55,6 +55,29 @@ strong {
   font-weight: var(--fw-bold);
 }
 
+:focus {
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
 h1,
 h2,
 h3 {
@@ -109,6 +132,10 @@ nav {
   box-shadow: var(--bs);
 }
 
+.section__subtitle--intro {
+  display: inline-block;
+}
+
 @media (min-width: 600px) {
   .intro {
     display: grid;
@@ -136,5 +163,50 @@ nav {
     position: relative;
     left: -1.5em;
     width: calc(100% + 1.5em);
+  }
+}
+
+.visalstudiopic {
+  margin: auto;
+}
+
+.software {
+  background-color: var(--clr-dark);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: var(--clr-light);
+  text-align: center;
+  align-items: center;
+}
+
+.section__title--software {
+  color: var(--clr-accent);
+  position: relative;
+}
+
+.section__title--software::after {
+  content: "";
+  display: block;
+  width: 5em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-light);
+  opacity: 0.25;
+}
+
+.software {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .software {
+    display: flex;
+    max-width: 1900px;
+    margin: 0 auto;
+  }
+
+  .software + .software {
+    margin-left: 2em;
   }
 }
